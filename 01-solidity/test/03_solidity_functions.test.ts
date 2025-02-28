@@ -23,19 +23,21 @@ describe("SolidityFunctions", function () {
   }
 
   describe("Deployment", function () {
-    it("should call constructor", async function () {
+    it("calculator charan", async function () {
       const { ctcSolidityFunctions } = await loadFixture(deploy);
-
-      expect(ctcSolidityFunctions).not.to.be.undefined;
+      await ctcSolidityFunctions.calculator(1,25_000);
+      let balance = await ctcSolidityFunctions.getBalance();
+       console.log("current balance ", balance);
+      await ctcSolidityFunctions.calculator(2,25_000);
+       balance = await ctcSolidityFunctions.getBalance();
+       console.log("current balance ", balance);
+      await ctcSolidityFunctions.calculator(3,25_000);
+       balance = await ctcSolidityFunctions.getBalance();
+       console.log("current balance ", balance);
+      await ctcSolidityFunctions.calculator(4,25_000);
+       balance = await ctcSolidityFunctions.getBalance();
+      console.log("current balance ", balance);
     });
-
-    it("should add balance", async function () {
-      const { ctcSolidityFunctions } = await loadFixture(deploy);
-
-      await ctcSolidityFunctions.addBalance(1_000_000);
-
-      const balance = await ctcSolidityFunctions.getBalance();
-      console.log("balance is now ", balance);
-    });
+    
   });
 });

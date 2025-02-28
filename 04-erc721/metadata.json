@@ -1,0 +1,24 @@
+{
+    "name": "KALABAW",
+    "description": "SUMASAYAW NA KALABAN",
+    "symbol": "KLBW",
+    "image": "https://imgur.com/6K6I8lV",
+    "attributes": [
+        {
+            "trait_type": "Animal",
+            "value": "KALABAW"
+        },
+        {
+            "trait_type": "BODY",
+            "value": "DALAMATIAN 1/1"
+        },
+        {
+            "trait_type": "HEAD",
+            "value": "COW"
+        },
+        {
+            "trait_type": "BREED",
+            "value": "POLISH"
+        }
+    ]
+}

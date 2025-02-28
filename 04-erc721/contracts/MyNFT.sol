@@ -19,4 +19,4 @@ contract KALABAW is ERC721URIStorage {
          );
          tokenId++;
     }
-}npx hardhat run ./scripts/deploy.js --network core_testnet
+}
